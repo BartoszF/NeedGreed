@@ -2,3 +2,8 @@ c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreedLi
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreedLibrary\bin\Debug\NeedGreedLibrary.pdb
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreedLibrary\obj\Debug\NeedGreedLibrary.dll
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreedLibrary\obj\Debug\NeedGreedLibrary.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreedLibrary\bin\Debug\NeedGreedLibrary.dll
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreedLibrary\bin\Debug\NeedGreedLibrary.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreedLibrary\obj\Debug\NeedGreedLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreedLibrary\obj\Debug\NeedGreedLibrary.dll
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreedLibrary\obj\Debug\NeedGreedLibrary.pdb

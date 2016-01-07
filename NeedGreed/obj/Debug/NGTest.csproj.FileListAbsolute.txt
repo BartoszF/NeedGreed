@@ -8,3 +8,14 @@ c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreed\b
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreed\obj\Debug\NGTest.csprojResolveAssemblyReference.cache
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreed\obj\Debug\NGTest.exe
 c:\users\użytkownik\documents\visual studio 2013\Projects\NeedGreed\NeedGreed\obj\Debug\NGTest.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\bin\Debug\NGTest.exe.config
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.exe
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\bin\Debug\NGTest.exe
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\bin\Debug\NGTest.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\bin\Debug\NeedGreedLibrary.dll
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\bin\Debug\NeedGreedLibrary.pdb
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.csprojResolveAssemblyReference.cache
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.Properties.Resources.resources
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.csproj.GenerateResource.Cache
+C:\Users\Użytkownik\Documents\NeedGreed\NeedGreed\obj\Debug\NGTest.Form1.resources
