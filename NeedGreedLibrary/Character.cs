@@ -8,18 +8,24 @@ namespace NeedGreedLibrary
 {
     public class Character
     {
-        List<NGObject> stats;
+        Dictionary<string, NGObject> stats;
+        public string name;
 
-        public Character(List<NGObject> objs)
+        public Character(Dictionary<string, NGObject> objs, string name)
         {
-            stats = new List<NGObject>();
-            stats.AddRange(objs);
+            stats = new Dictionary<string, NGObject>();
+            foreach(KeyValuePair<string, NGObject> kp in objs)
+            {
+                stats.Add(kp.Key, (NGObject)Activator.CreateInstance(kp.Value.GetType()));
+            }
+
+            this.name = name;
         }
 
         public NGObject Consume(NGObject o, float val)
         {
-            stats[stats.IndexOf(o)].value += val;
-            return stats[stats.IndexOf(o)];
+            stats[o.name].value += val;
+            return stats[o.name];
         }
 
         public NGSatisfier Decision(List<NGSatisfier> sats)
@@ -28,9 +34,10 @@ namespace NeedGreedLibrary
             foreach(NGSatisfier s in sats)
             {
                 float score = 0;
+                int can = Can(s) ? 0 : 100;
                 foreach(KeyValuePair<NGObject,float> o in s.influence)
                 {
-                    score += o.Value * stats[stats.IndexOf(o.Key)].value * stats[stats.IndexOf(o.Key)].mask;
+                    score += o.Value * stats[o.Key.name].value * stats[o.Key.name].mask + can;
                 }
 
                 scores.Add(s, score);
@@ -39,18 +46,32 @@ namespace NeedGreedLibrary
             return scores.OrderBy(x => x.Value).First().Key;
         }
 
+        public bool Can(NGSatisfier sat)
+        {
+            foreach (KeyValuePair<NGObject, float> o in sat.needed)
+            {
+                if (o.Value < this[o.Key].value) return false;
+            }
+            return true;
+        }
         public void Apply(NGSatisfier sat)
         {
             foreach(KeyValuePair<NGObject, float> i in sat.influence)
             {
-                this[i.Key].value += i.Value;
+                this.Consume(i.Key,i.Value);
             }
         }
 
         public NGObject this[NGObject obj]
         {
-            get { return stats[stats.IndexOf(obj)]; }
-            set { stats[stats.IndexOf(obj)] = value; }
+            get { return stats[obj.name]; }
+            set { stats[obj.name] = value; }
+        }
+
+        public NGObject this[string obj]
+        {
+            get { return stats[obj]; }
+            set { stats[obj] = value; }
         }
     }
 }

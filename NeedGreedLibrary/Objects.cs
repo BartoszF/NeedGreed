@@ -24,9 +24,9 @@ namespace NeedGreedLibrary
             return null;
         }
 
-        public List<NGObject> Get()
+        public Dictionary<string, NGObject> Get()
         {
-            return objects.Values.ToList();
+            return objects;
         }
     }
 }

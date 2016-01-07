@@ -15,14 +15,15 @@ namespace NeedGreedLibrary
             stats = new Objects();
         }
 
-        public Character createCharacter()
+        public Character createCharacter(string name)
         {
-            return new Character(stats.Get());
+            return new Character(stats.Get(), name);
         }
 
         public NGObject createStat(NGObject obj)
         {
             return stats.Add(obj.name, obj);
         }
+
     }
 }
